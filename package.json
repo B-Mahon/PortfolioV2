@@ -13,10 +13,6 @@
     "cors": "^2.8.5",
     "dotenv": "^8.2.0"
   },
-  "engines": {
-    "node": "12.6.1",
-    "npm": "6.13.7"
-  },
   "devDependencies": {},
   "keywords": [],
   "description": ""
