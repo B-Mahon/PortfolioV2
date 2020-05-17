@@ -9,7 +9,7 @@ const mongoose = require("mongoose");
 const cors = require('cors');
 app.use(bodyParser.urlencoded({extended: false}));
 app.use(bodyParser.json());
-app.use(express.static("public"));
+app.use(express.static("path.join"(__dirname,'client/build')));
 app.use(cors());
 //mongoose.connect("mongodb://localhost:27017/CRUDdb")
 mongoose.connect("mongodb+srv://Blaine:dogbark@cluster0-r8hfn.mongodb.net/test?retryWrites=true&w=majority/CRUDdb")
@@ -91,6 +91,10 @@ app.route("/user")
                 res.send("Done")
              })
         });
+
+app.get('*',(req,res)=>{
+    res.sendFile(path.join(__dirname+'/client/build/index.html'))
+})
 
 
 //Start server on local port
