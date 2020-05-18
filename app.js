@@ -10,7 +10,7 @@ const path = require('path');
 const cors = require('cors');
 app.use(bodyParser.urlencoded({extended: false}));
 app.use(bodyParser.json());
-app.use(express.static("path.join"(__dirname,'client/build')));
+app.use(express.static(path.join(__dirname,'client/build')));
 app.use(cors());
 //mongoose.connect("mongodb://localhost:27017/CRUDdb")
 mongoose.connect("mongodb+srv://Blaine:dogbark@cluster0-r8hfn.mongodb.net/test?retryWrites=true&w=majority/CRUDdb")
