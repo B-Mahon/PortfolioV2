@@ -1,0 +1,79 @@
+p {
+  font-family: "Montserrat", sans-serif;
+}
+
+body{
+  width:100%;
+}
+.back{
+  background-image:url('background.jpg');
+  background-size:cover;
+  height: 100vh;
+  padding:5%;
+  
+}
+
+.container{
+  background-color: #f7f7f7;
+  padding:5%;
+  box-shadow:2px 2px 2px black;
+  border-radius:25px;
+}
+
+.head{
+  text-align: center;
+  color:#3f3f44;
+}
+.head h1{
+  font-size: 5rem;
+  font-family: 'PT Sans Caption', sans-serif;
+}
+
+
+form{
+  position: relative;
+  width: 480px;
+  margin: 30px auto 20px auto;
+  background: #fff;
+  padding: 15px;
+  border-radius: 7px;
+  box-shadow: 0 1px 5px rgb(138, 137, 137);
+  background:#fff;
+}
+
+form button{
+  position: relative;
+  float: right;
+  background-color: #f5ba13;
+  border: none;
+  width: 36px;
+  height: 36px;
+  border-radius: 60px;
+  cursor: pointer;
+  outline: none;
+}
+
+
+.notes{
+  box-shadow: 0 1px 5px rgb(138, 137, 137);
+  background-color:#f0f0f0;
+  margin: 2%;
+  text-align: center;
+  border-radius:20px;
+}
+
+.my-notes{
+  background-image:url('note_background.svg');
+  background-size:cover;
+  position:fixed;
+  left:0;
+  right:0;
+  top:0;
+  bottom:0;
+  z-index: 10;
+}
+
+.note-head{
+  font-size: 5rem;
+  font-family: 'PT Sans Caption', sans-serif;
+}
