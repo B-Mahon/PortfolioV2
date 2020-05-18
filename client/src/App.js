@@ -32,7 +32,7 @@ function App() {
   },[])
   
   const getPosts = async() =>{
-    const response = await fetch("http://localhost:2000/user")
+    const response = await fetch("/user")
     const data = await response.json()
     setPosts(posts=data)   
     }
@@ -43,7 +43,7 @@ function App() {
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify(newPost)
       }
-      const response = await fetch("http://localhost:2000/user",requestOptions)          
+      const response = await fetch("/user",requestOptions)          
       getPosts()
     
   }
@@ -54,7 +54,7 @@ function App() {
       headers: { 'Content-Type': 'application/json' },
   }
       console.log(delPost);
-      const response = await fetch("http://localhost:2000/user/"+delPost,requestOptions)
+      const response = await fetch("/user/"+delPost,requestOptions)
       console.log(response);
       getPosts()
       
@@ -69,7 +69,7 @@ function App() {
      body: JSON.stringify(updatedPost)
 
    }
-     const response = await fetch("http://localhost:2000/user/"+originalPost,requestOptions)
+     const response = await fetch("/user/"+originalPost,requestOptions)
      getPosts()
       
   } 
