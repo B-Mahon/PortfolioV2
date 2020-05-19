@@ -84,7 +84,7 @@ function App() {
           </Col>
         </Row>          
       <animated.div style={notesAnimation} className="my-notes">
-        <Jumbotron style={{'boxShadow': '0 0 10px 0 rgba(0, 0, 0, 0.3)'}} fluid>
+        <Jumbotron style={{'boxShadow': '0 0 10px 0 rgba(0, 0, 0, 0.3)','backgroundColor':'#2c3e50','color': '#f7f7f7'}} fluid>
           <Container fluid>
             <h1 className="note-head">Notes</h1>
           </Container>

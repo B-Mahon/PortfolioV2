@@ -29,7 +29,7 @@ function Post(props){
    
     return(
         <div className="notes">
-        <h1>{props.title}</h1>
+        <h1 style={{'backgroundColor':'#2c3e50','color':'#f7f7f7'}}>{props.title}</h1>
         <p>{props.body}</p>
         <p>{props.name}</p>
         <DeleteIcon style={{'paddingRight':'2%'}} onClick={handleClick}/>
