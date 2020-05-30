@@ -8,6 +8,7 @@ const chalk = require('chalk');
 var nodeMailer = require('nodemailer');
 const path = require('path');
 const cors = require('cors');
+app.use(express.static(path.join(__dirname,'client/build')));
 app.use(bodyParser.urlencoded({extended: false}));
 app.use(bodyParser.json());
 app.use(express.static("public"));
