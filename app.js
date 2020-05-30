@@ -6,6 +6,7 @@ const app = express();
 const bodyParser = require("body-parser");
 const chalk = require('chalk');
 var nodeMailer = require('nodemailer');
+const path = require('path');
 const cors = require('cors');
 app.use(bodyParser.urlencoded({extended: false}));
 app.use(bodyParser.json());
