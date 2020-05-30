@@ -59,6 +59,12 @@ app.route("/message")
       
       });
 
+      app.get('*',(req,res)=>{
+        res.sendFile(path.join(__dirname+'/client/build/index.html'))
+    })
+    
+    
+
 //Start server on local port
 app.listen(process.env.PORT || 2000, function() {
     console.log(chalk.green("Server has started"));
