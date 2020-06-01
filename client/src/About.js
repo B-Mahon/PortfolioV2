@@ -4,7 +4,7 @@ import avatar from './images/avatar.PNG';
 import {animated,useSpring} from 'react-spring';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFile } from '@fortawesome/free-solid-svg-icons';
-import pdf from './Resume.pdf'
+import pdf from './My-Resume.pdf'
 import mongoIcon from './images/mongo240.png';
 import nodeIcon from './images/nodejs240.png';
 import reactIcon from './images/react240.png';
